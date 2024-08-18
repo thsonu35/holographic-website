@@ -1,0 +1,148 @@
+/* General styling */
+.about-us {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin-top: 9vh; /* Margin from top */
+    padding: 20px;
+  }
+  
+  .company-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .company-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00;
+  }
+  
+  .company-intro p {
+    font-size: 1.2em;
+  }
+  
+  .our-team {
+    margin-bottom: 40px;
+  }
+  
+  .our-team h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00ff00;
+
+  }
+  
+  .team-member {
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #1f1f1f; /* Dark card background */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Red glow effect */
+  }
+  
+  .text {
+    flex: 1;
+    margin-right: 20px;
+    color: #00ff00;
+    /* Light text color */
+  }
+  
+  .image {
+    flex: 0 0 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .slide-left-text {
+    animation: slide-left 1s ease-out forwards;
+  }
+  
+  .slide-right-text {
+    animation: slide-right 1s ease-out forwards;
+  }
+  
+  .slide-right-img {
+    animation: slide-right 1s ease-out forwards;
+  }
+  
+  .slide-left-img {
+    animation: slide-left 1s ease-out forwards;
+  }
+  
+  @keyframes slide-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-right {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .our-clients {
+    text-align: center;
+  }
+  
+  .our-clients h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00ff00;
+  }
+  
+  .our-clients p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .client-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .client img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .client p {
+    font-size: 1em;
+    color: #e0e0e0;
+  }
+  

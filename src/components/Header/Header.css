@@ -1,0 +1,62 @@
+/* src/components/Header.css */
+
+header {
+  background-color: #111; /* Dark background for a high-tech look */
+  color: #fff; /* White text for contrast */
+  padding: 1.5rem 3rem; /* Space around content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw; /* Full viewport width */
+  z-index: 1000;
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ff00; /* Neon color for hover effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+}

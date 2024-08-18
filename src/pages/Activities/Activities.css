@@ -1,0 +1,80 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Arial', sans-serif;
+}
+
+.activities-page {
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #BB86FC;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    color: #B0BEC5;
+}
+
+.photo-gallery,
+.albums-section,
+.games-section,
+.tracking-details,
+.team-events,
+.our-team,
+.upcoming-activities {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #BB86FC;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #BB86FC;
+    padding-bottom: 10px;
+}
+
+.gallery, .albums, .events-list, .team-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #BB86FC #121212;
+}
+
+.gallery-item img,
+.album img,
+.event-item img,
+.team-slide img {
+    width: 300px;
+    height: 300px; /* Set a fixed height */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+p {
+    font-size: 1em;
+    color: #CFD8DC;
+}
+
+.games-list, .upcoming-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.games-list li, .upcoming-list li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tracking-info p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,126 @@
+.careers {
+  margin-top: 9vh;
+  padding: 20px;
+  min-height: 54vh;
+  background: #121212;
+  color: #e0e0e0;
+  min-width: 97vw;
+}
+
+.job-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: bold;
+}
+
+.filter-group select,
+.filter-group input {
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+
+.filter-group input::placeholder {
+  color: #888;
+}
+
+.job-listings {
+  margin-top: 20px;
+}
+
+.job-card {
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #1e1e1e;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.job-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00ff00;
+}
+
+.job-card p {
+  color: #ccc;
+}
+
+.application-form {
+  margin-top: 20px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #00ff00;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00cc00;
+  transform: scale(1.05);
+}
+
+.status-message {
+  font-size: 1.2em;
+  color: #00ff00;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .job-filter {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+}

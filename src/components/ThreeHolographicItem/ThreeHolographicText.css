@@ -1,0 +1,10 @@
+.three-holographic-text {
+    width: 500vw;
+    height: 40vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0); /* Dark background for better contrast */
+  }
+  

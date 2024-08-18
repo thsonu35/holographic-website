@@ -1,0 +1,382 @@
+/* HomePage.css */
+
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #ccc;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: sticky;
+  overflow: hidden;
+}
+
+.three-holographic-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 20px;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  margin-top: 17%; /* Increase this value to push content down from the top */
+}
+
+.content {
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero-section {
+  background: rgba(30, 30, 30, 0.8);
+  color: #e0e0e0;
+  padding: 40px 5vw;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #00ff00;
+  border: none;
+  color: #121212;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #00cc00;
+}
+
+.company-history, .mission-vision, .core-values, .detailed-services, .testimonial {
+  background: rgba(30, 30, 30, 0.8);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.company-history h2, .mission-vision h2, .core-values h2, .detailed-services h2, .testimonial h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.company-history p, .mission-vision p, .core-values ul, .detailed-services .service-item {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.mission-vision-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mission, .vision {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.core-values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.core-values li {
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.service-item {
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00ff00;
+}
+
+.testimonial-content {
+  background: #333;
+  border-left: 4px solid #00ff00;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+blockquote {
+  margin: 0;
+  font-style: italic;
+  color: #e0e0e0;
+}
+
+footer {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.sidebar {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  background: #1f1f1f;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #00ff00;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #ccc;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  color: #f0f0f0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.modal-close {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modal-body {
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 20px;
+}
+
+.modal-button {
+  background-color: #00ff00;
+  border: none;
+  color: #121212;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+  background-color: #00cc00;
+}
+
+.modal-close:hover {
+  color: #ff4d4d;
+}
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+      grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+      display: none;
+  }
+}
+
+/* General Animation Classes */
+.animate-logo {
+  animation: bounce 2s infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 1s ease-out;
+}
+
+.animate-slideRight {
+  animation: slideRight 1s ease-out;
+}
+
+/* Keyframes for Animations */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Logo Styling */
+.logo img {
+  max-width: 150px;
+  margin: 20px;
+}
+/* Agile Methodology Section */
+.agile-methodology {
+  background: rgba(30, 30, 30, 0.8);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  animation: fadeIn 1.5s ease-out;
+}
+
+.agile-methodology h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.agile-methodology p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.agile-methodology img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.agile-benefits {
+  margin-top: 20px;
+}
+
+.agile-benefits h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00ff00;
+}
+
+.agile-benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.agile-benefits li {
+  margin: 10px 0;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .agile-methodology img {
+    width: 100%;
+  }
+}

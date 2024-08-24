@@ -4,7 +4,7 @@ import './Header.css'; // Add your styles here
 
 const Header = () => (
   <header>
-    <div className="logo">RadiantKube Technologies</div>
+    <div className="logo">BitKrsp IT Solutions</div>
     <nav>
       <ul>
         <li><Link to="/">Home</Link></li>

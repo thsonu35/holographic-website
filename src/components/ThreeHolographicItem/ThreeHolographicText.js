@@ -28,7 +28,7 @@ const ThreeHolographicText = () => {
     // Load font and create text
     const loader = new FontLoader();
     loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', (font) => {
-      const textGeometry = new TextGeometry('RadiantKube', {
+      const textGeometry = new TextGeometry('BitKrsp IT Solutions', {
         font: font,
         size: 1,
         height: 0.0, // Decrease thickness to make text thinner
